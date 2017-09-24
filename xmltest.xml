@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<breeze_systems_photobooth version="3.7.1">
+<photo_information>
+  <date>2017/05/26</date>
+  <time>13:50:57</time>
+  <user_data></user_data>
+  <prints>1</prints>
+  <photobooth_images_folder>D:\desktop\PhotoboothImags\Vintage Screens BW (1600x900) Unbranded</photobooth_images_folder>
+  <digital_zoom>100</digital_zoom>
+  <mirror_output>0</mirror_output>
+  <camera_orientation>0</camera_orientation>
+  <bw_mode>0</bw_mode>
+  <photos>
+    <photo image="1">IMG_20170526_135057691.jpg</photo>
+    <photo image="2">IMG_20170526_135057691.jpg</photo>
+    <photo image="3">IMG_20170526_135057691.jpg</photo>
+    <photo image="4">IMG_20170526_135057691.jpg</photo>
+    <output>prints\170526_135057_1.jpg</output>
+  </photos>
+  <image_delay>75</image_delay>
+  <title_delay>150</title_delay>
+  <title_at_end>0</title_at_end>
+  <ping_pong_playback>0</ping_pong_playback>
+  <gif_overlays_per_photo>1</gif_overlays_per_photo>
+  <gif_frame_width>0</gif_frame_width>
+  <gif_frame_height>0</gif_frame_height>
+  <gif_x_offset>0</gif_x_offset>
+  <gif_y_offset>0</gif_y_offset>
+  <gif_file>GIF\170526_135057_1.GIF</gif_file>
+  <mp4_file>D:\desktop\MP4\170526_135057_1.MP4</mp4_file>
+</photo_information>
+</breeze_systems_photobooth>
