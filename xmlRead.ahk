@@ -22,3 +22,39 @@ MsgBox, % xpObj.xml
 
 ;xpObj.item(0).text := "dupa"
 ;MsgBox, % xpObj.item(0).text
+
+oXML_Create(xmlpath, xmldata=False) {
+	if !xmldata {
+		;default xml contents
+		xmldata =
+		(Ltrim
+			<?xml version="1.0"?>
+			<root>
+			</root>
+		)
+	}
+	
+	oXML := ComObjCreate("MSXML2.DOMDocument")
+	oXML.async := False  
+	if (doc := oXML.loadXML(xmldata))
+		doc.Save(xmlpath)
+	else ; Could not load the xml file.
+		Return False
+	Return oXML
+}
+
+
+oXML_DeleteNode(ByRef oXML, NodeName, NumItem=0) {
+	x := oXML.getElementsByTagName(NodeName).Item(NumItem)
+	x.parentNode.removeChild(x)
+}
+
+oXML_AddNode(ByRef oXML, ParentNode, ChildNode, NumItem=0) {
+	oNode := oXML.createElement(ChildNode)
+	oXML.getElementsByTagName(ParentNode).Item(NumItem).appendChild(oNode)
+}
+
+oXML_InsertText(ByRef oXML, NodeName, text, NumItem=0) {
+	x := oXML.getElementsByTagName(NodeName).Item(NumItem)
+	x.appendChild(oXML.createTextNode(text))
+}
